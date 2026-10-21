@@ -1,8 +1,5 @@
 # KalaYatra — A Digital Journey Through Indian Art History
 
-> **College Capstone Project**  
-> **Undergraduate Department of Computer Science & Archaeological Heritage**  
-> *Developed by Team KalaYatra (5 Members)*
 
 ---
 
