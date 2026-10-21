@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #E2D6C0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-y: auto;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    background-color: #FAF6ED;
+    color: #1C1714;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F3EBDD;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C59B4B;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #781A2C;
+  }
+}
+
+/* Indian ornamental pattern overlays and decorative borders */
+.bg-parchment-texture {
+  background-color: #FAF6ED;
+  background-image: 
+    radial-gradient(rgba(197, 155, 75, 0.12) 1px, transparent 0),
+    radial-gradient(rgba(120, 26, 44, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.indian-border-motif {
+  border-image: linear-gradient(to right, #C59B4B, #781A2C, #C59B4B) 1;
+}
+
+.gold-accent-line {
+  position: relative;
+}
+.gold-accent-line::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, #C59B4B, transparent);
+  margin-top: 8px;
+}
+
+.gold-accent-center::after {
+  content: '❖';
+  display: block;
+  text-align: center;
+  color: #C59B4B;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Hide scrollbars for clean horizontal timeline */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
